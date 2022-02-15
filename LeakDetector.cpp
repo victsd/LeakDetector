@@ -8,7 +8,7 @@
 #include <iostream>
 #include <cstring>
 
-// 在此处定义 _DEBUG_NEW_ 宏, 从而在这个实现文件中不再重载 new 运算符, 从而防止编译冲突
+// 这个宏保证 LeakDetector.cpp 中的new 不会被LeakDetector.h中的 宏替换 替换掉
 #define __NEW_OVERLOAD_IMPLEMENTATION__
 #include "LeakDetector.hpp"
 
